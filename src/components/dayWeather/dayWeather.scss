@@ -1,0 +1,78 @@
+.DayWeather {
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  box-sizing: border-box;
+  .DayWeather-date {
+    font-size: 18px;
+    font-weight: 600;
+    span:nth-child(2) {
+      margin-left: 10px;
+    }
+  }
+  .DayWeather-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+    margin-top: 10px;
+
+    .DayWeather-container-card {
+      width: 100%;
+      height: 100%;
+      margin: 0px 5px;
+      border: 1px solid rgb(150, 150, 150);
+      border-radius: 10px;
+      box-shadow: 0px 0px 2px rgb(150, 150, 150);
+
+      .DayWeather-container-card-temp {
+        display: flex;
+        justify-content: space-around;
+        font-size: 40px;
+        font-weight: 600;
+      }
+      .DayWeatherTime {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: underline;
+      }
+      .DayWeatherDiscription-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        padding: 5px;
+        box-sizing: border-box;
+        .DayWeatherDiscription-container-weather {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 5px;
+          padding: 5px;
+          height: 2.5em;
+          border: 1px solid rgb(255, 60, 0);
+          border-radius: 10px;
+          box-shadow: 0px 0px 3px orange;
+
+          span {
+            text-align: center;
+          }
+        }
+        .DayWeatherDiscription-container-humidity {
+          display: flex;
+          flex-direction: column;
+          .DayWeatherDiscription-container-humidity-data {
+            font-size: 16px;
+            font-weight: 600;
+            padding-top: 5px;
+          }
+          span {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
